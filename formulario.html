@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style type="text/css">
+
+        body {
+            background-color: lightslategray;
+        }
+        
+        h1 { 
+          color: rgb(4, 16, 37);
+          border: solid white;
+        
+       
+          
+      }
+
+      .menu {
+          border: 2px solid rgb(255, 71, 178);
+      }
+ 
+      .t {
+          border: 1px solid #000
+      }
+
+      th,td{
+          border: 1px solid black;
+      }
+      
+
+      .div1 {
+          background-color: rgb(202, 49, 49);
+          position: absolute;
+          top: 400px;
+      }
+      
+       .div2 {          
+            
+            position: relative;
+          
+           
+            right: 10%;   
+                             
+       }
+
+  
+       
+      
+    
+        </style>
+
+</head>
+<body>
+    <div style="text-align: center;">
+        <header><h1> Site de TI  </h1>
+        <nav class="menu">
+            <a href="pagina1.html"> <h3>Home</h3> </a>
+            <a href="pagina2.html"> <h3>Cientista de Dados</h3> </a>
+            <a href="#"> <h3>Contato</h3> </a>
+        </nav>
+    </header>
+
+    
+    <br>
+
+    <div class="div2">
+    <h1>Formulário</h1>
+    </div>
+    
+    <form  style="justify-content: center; display: flex; margin: auto;" method="get" action="#">
+
+
+          <div class="div1">
+        <table class="t">
+
+            <tr>
+                <th>Nome completo:</th>
+                <td><input type="text" id="nome" placeholder="Nome"></td>
+                <td><input type="text" id="sobrenome" placeholder="Sobrenome"></td>    
+            
+            </tr>
+
+            <tr>
+                <th>E-mail</th>
+                <td colspan="2"><input type="email" id="email" placeholder="Email"></td> 
+                
+            </tr>
+
+            <tr>
+                <th>Telefone</th>
+                <td colspan="2"><input type="tel" id="telefone" placeholder="Telefone/Celular"></td>
+
+            </tr>
+
+            <tr>
+                <th>Sua área de interesse:</th>
+                <td colspan="2">
+
+                    <input type="checkbox" id="Administração" placeholder="Nome completo">
+                    <label for="Administração">Administração</label><br>
+
+                    <input type="checkbox" id="Humanas" placeholder="Nome completo">
+                    <label for="Humanas">Humanas</label><br>
+                    
+                    <input type="checkbox" id="Tecnologia" placeholder="Nome completo">
+                    <label for="Tecnologia">Tecnologia</label>
+
+                </td>
+                
+
+
+            </tr>
+
+            <tr>
+
+                <th>Sexo:</th>
+                <td colspan="2">
+
+                    <input type="radio" id="masculino" placeholder="Nome completo">
+                    <label for="masculo">Masculino</label>
+
+                    <input type="radio" id="feminino" placeholder="Nome completo">
+                    <label for="feminino">Feminino</label>
+                    
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="2">
+                    
+                    <input type="submit" id="enviar" value="Enviar">
+                    <input type="reset" id="excluir" value="Excluir">
+                
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    </form>
+    </div>
+   
+</body>
+</html>
